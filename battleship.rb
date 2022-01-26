@@ -1,8 +1,8 @@
 #create grid
 
 water = "~"
-ship = 1
-hitship = 2
+ship = "~"
+hitship = "X"
 hitwater = 3
 gridsize = 10 
 still_searching = true
@@ -47,30 +47,30 @@ y = gets.chomp.to_i
 		grid [x][y] = hitship
 
 	elsif x > 0
-	    if grid [x - 1][y] == ship
-          puts "You're close, but still a jagoff!"
-       end 
+		if grid [x - 1][y] == ship
+				puts "You're close, but still a jagoff!"
+		end 
 	
 
   elsif y > 0
-	    if grid [x][y - 1] == ship
-		    puts "You're close, but still a jagoff!"
-      end
+		if grid [x][y - 1] == ship
+			puts "You're close, but still a jagoff!"
+		end
    
 
-    elsif x < gridsize
-	    if grid [x + 1][y] == ship
-		    puts "You're close, but still a jagoff!"
-      end
+	elsif x < gridsize
+		if grid [x + 1][y] == ship
+			puts "You're close, but still a jagoff!"
+		end
     
 
-    elsif y < gridsize
-	    if grid [x][y + 1] == ship 
-		    puts "You're close, but still a jagoff!"
-	    	end
-	   else 
-				puts "You missed jagaloon!"
-		end
+	elsif y < gridsize
+		if grid [x][y + 1] == ship 
+			puts "You're close, but still a jagoff!"
+			end
+		else 
+			puts "You missed jagaloon!"
+	end
 end
 
 
