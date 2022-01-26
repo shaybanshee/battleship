@@ -71,13 +71,6 @@ y = gets.chomp.to_i
 	   else 
 				puts "You missed jagaloon!"
 				end
-
-				# (0...gridsize).each do |i|
-        # (0...gridsize).each do |j|
-        #     if grid[i][j] == ship
-				# 				still_searching = true
-				# 		end 
-				# 	end
 end
 
 
